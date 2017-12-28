@@ -20,4 +20,24 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
   
+  test "name should not be too long" do
+    @user.name = 'a' * 51
+    assert_not @user.valid?
+  end
+
+  test "email should not be too long" do
+    @user.email = "a"*244+"@example.com"
+    assert_not @user.valid?
+  end
+
+  test "email validation should accept valid addresses" do
+    %w[user@example,com
+      user_at_foo.org 
+      user.name@example.foo@bar_baz.com
+      foo@bar+baz.com].each do |addr|
+      @user.email = addr
+      assert_not @user.valid?, "#{addr.inspect} should be valid"
+    end
+  end
+
 end
