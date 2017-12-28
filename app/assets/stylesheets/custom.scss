@@ -1,0 +1,74 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding-top: 60px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*
+textarea {
+  resize: vertical;
+}
+*/
+
+header .container {
+  overflow: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+#logo {
+  color: #fff;
+  font-size: 1.7em;
+  float: left;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #ccc;
+}
+
+
+/* footer */
+footer {
+  margin: 45px 30px 0;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  overflow: hidden;
+}
+
+footer p {
+  display: inline;
+}
+
+footer nav {
+  float: right;
+}
+
+
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  display: inline;
+  margin-left: 15px;
+}
+
+
