@@ -1,0 +1,13 @@
+<footer class="footer">
+  <p>
+    The <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+  </p>
+  <nav>
+    <ul>
+      <% %w[About Contact News].each do |cont| %>
+      <li><%= link_to cont, '#' %></li>
+      <% end %>
+    </ul>
+  </nav>
+</footer>
