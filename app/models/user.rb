@@ -5,4 +5,8 @@ class User < ApplicationRecord
    presence: true,
    length: { maximum: 255 },
    uniqueness: { case_sensitive: false }
+  # use password and password_confirmation attribute & authenticate method
+  has_secure_password
+
+  validates :password, presence: true, length: { minimum: 6 }
 end
